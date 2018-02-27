@@ -1,22 +1,37 @@
-//int finger(){
-//  if (Serial.available()>0)
-//  {
-//    int x = Serial.read();
-//     if (x == 84 || x==116 )// if the number is ascii capital or lowercase t...
-//          { finger = 6;// selects the pin connected to the servo that controls the Thumb
-//          }//selects the thumb
-//     if (x ==  73 || x== 105)// if the number is ascii capital or lowercase i...
-//          {finger = 5;// selects the pin connected to the servo that controls the Index Fingers
-//          }//selects the index finger
-//     if (x ==  77 || x== 109 )// if the number is ascii capital or lowercase m...
-//          {finger = 9;// selects the pin connected to the servo that controls the Middle finger
-//          } //selects the middle finger
-//     if (x == 82 ||x== 114)// if the number is ascii capital or lowercase r...
-//          {finger = 11;// selects the pin connected to the servo that controls the Ring Finger
-//          }//selects the ring finger
-//     if (x == 80 || x==112)// if the number is ascii capital or lowercase p...
-//          {finger=10;// selects the pin connected to the servo that controls the Pinky Finger
-//          }// selects the pinky finger
-//  }
-//}
+void fingermove(int fingernumber, int FingerPosition) {
+  switch(fingernumber) {
+    case 0: //Moving the thumb
+    servo_move(FingerPosition, 6);
+    break;
+
+    case 1: //Moving the index finger
+    servo_move(FingerPosition, 5);
+    break;
+
+    case 2: //Moving the middle finger
+    servo_move(FingerPosition,9);
+    break;
+
+    case 3: //Moving the ring finger
+    servo_move(FingerPosition, 11);
+    break;
+
+    case 4: //Moving the pinky finger
+    servo_move(FingerPosition, 10);
+    break;
+  }
+}
+
+void servo_move(int FingerPosition, int finger){ // uses a value from one to 9 to move the selected servo using the 20 ms duty cycle servos use to position themselves
+    FingerPosition = map ( FingerPosition, 0,9, 1000, 2000);// maps the values from 0-9 to a range of 450-2500 which is the minimum and maximum values of the servo duty cycle  
+    int n=0;// initialize the loop at zero
+    while(n<=50)// send the the duty cycle pulse 50 to delay the servos to allow them to get into position
+    {
+    digitalWrite(finger, HIGH);// send a high signal to the finger
+    delayMicroseconds (FingerPosition);// delay for the chunk of the 20ms duty cycle that relates to the position from 450us to 2500us
+    digitalWrite(finger, LOW);//send the low signal to the finger
+    delayMicroseconds ( 20000- FingerPosition);//wait the remainder of the 20ms duty cycle of the servo
+    n++;
+    }
+    }
 

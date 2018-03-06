@@ -11,7 +11,8 @@ pinMode (11, OUTPUT);// set pin 11 as an output
 Serial.begin (9600);// starts the serial monitor which is used for both debugging and as an input
 }
 void loop() {
-  fingermove(0, 0);
+  E();
+  Start();
 }  
 
 

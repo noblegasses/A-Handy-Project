@@ -1,4 +1,5 @@
 #include "fingercontrol.h"
+void Start();
 void A();
 void B();
 void C();

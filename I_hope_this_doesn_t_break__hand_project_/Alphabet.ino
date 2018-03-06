@@ -4,6 +4,7 @@ void Start () {
   fingermove(2, 9);
   fingermove(3, 9);
   fingermove(4, 9);
+  delay(50);
 }
 
 void A () {
@@ -12,6 +13,7 @@ void A () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 0);
+  delay(50);
 }
 
 void B () {
@@ -20,6 +22,7 @@ void B () {
   fingermove(2, 9);
   fingermove(3, 9);
   fingermove(4, 9);
+  delay(50);
 }
 
 void C () {
@@ -28,6 +31,7 @@ void C () {
   fingermove(2, 3);
   fingermove(3, 3);
   fingermove(4, 3);
+  delay(50);
 }
 
 void D () {
@@ -35,8 +39,9 @@ void D () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 }
 
 void E () {
@@ -44,8 +49,9 @@ void E () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 }
 
 void LetterF () {
@@ -53,8 +59,9 @@ void LetterF () {
   fingermove(2, 9);
   fingermove(3, 9);
   fingermove(4, 9);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 }
 
 void G () {
@@ -62,8 +69,9 @@ void G () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 } //Same as D, except requires wrist movement
 
 void H () {
@@ -71,8 +79,9 @@ void H () {
   fingermove(2, 9);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 }
 
 void I () {
@@ -80,8 +89,9 @@ void I () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 9);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 }
 
 void J () {
@@ -89,8 +99,9 @@ void J () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 9);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 } //Same as I, but requires wrist movement
 
 void K () {
@@ -98,8 +109,9 @@ void K () {
   fingermove(2, 9);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 } //Similar to H, wrist movement + sideways movement required
 
 void L () {
@@ -107,27 +119,30 @@ void L () {
   fingermove(2, 9);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 }
 
 void M () {
   fingermove(0, 0);
-  delay(2);
+  delay(50);
   fingermove(1, 0);
   fingermove(2, 0);
   fingermove(3, 0);
-  fingermove(4, 0); 
+  fingermove(4, 0);
+  delay(50);
 }
 
 void N () {
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 2);
-  delay(2);
+  delay(50);
   fingermove(1, 2);
   fingermove(2, 2);
+  delay(50);
 } //Needs fine tuning, may destroy the hand >.>
 
 void O () {
@@ -135,8 +150,9 @@ void O () {
   fingermove(2, 4);
   fingermove(3, 4);
   fingermove(4, 4);
-  delay(2);
-  fingermove(0, 4);  
+  delay(50);
+  fingermove(0, 4);
+  delay(50);  
 }
 
 void P () {
@@ -145,6 +161,7 @@ void P () {
   fingermove(3, 3);
   fingermove(4, 3);
   fingermove(1, 9);
+  delay(50);
 } //Needs wrist movement
 
 void Q () {
@@ -153,6 +170,7 @@ void Q () {
   fingermove(3, 0);
   fingermove(4, 0);
   fingermove(1, 9);
+  delay(50);
 } //Needs wrist movement
 
 void R () {
@@ -160,8 +178,9 @@ void R () {
   fingermove(2, 9);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 } //Needs sideways movement
 
 void S () {
@@ -169,18 +188,20 @@ void S () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 3);
+  delay(50);
 }
 
 void T () {
   fingermove(3, 0);
   fingermove(4, 0);
   fingermove(2, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 4);
-  delay(2);
+  delay(50);
   fingermove(1, 2);
+  delay(50);
 } //Needs fine tuning, may destroy hand :)
 
 void U () {
@@ -188,8 +209,9 @@ void U () {
   fingermove(2, 9);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 }
 
 void V () {
@@ -197,26 +219,29 @@ void V () {
   fingermove(2, 9);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 } //Similar to U, needs sideways movement
 
 void W () {
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 3);
   fingermove(1, 9);
   fingermove(2, 9);
   fingermove(3, 9);
+  delay(50);
 }
 
 void X () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
   fingermove(1, 7);
+  delay(50);
 }
 
 void Y () {
@@ -224,7 +249,8 @@ void Y () {
   fingermove(1, 0);
   fingermove(2, 0);
   fingermove(3, 0);
-  fingermove(4, 9);  
+  fingermove(4, 9);
+  delay(50);
 }
 
 void Z () {
@@ -232,7 +258,8 @@ void Z () {
   fingermove(2, 0);
   fingermove(3, 0);
   fingermove(4, 0);
-  delay(2);
+  delay(50);
   fingermove(0, 0);
+  delay(50);
 } //Needs complex movement
 

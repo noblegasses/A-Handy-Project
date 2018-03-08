@@ -5,7 +5,7 @@ void B();
 void C();
 void D();
 void E();
-void LetterF();
+void LetterF(); //F is a reserved character, therefore we have to use a different definition
 void G();
 void H();
 void I();
